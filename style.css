@@ -206,14 +206,15 @@ nav li {
 
 .projects-wrapper {
     width: 90%;
-    height: 1200px;
+    height: 1100px;
     /* height: auto !important; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: green;
+    background-color: rgba(211,211,211, 0.6);
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 150px;
     position: relative;
 }
 .hover-wrapper p {
@@ -228,7 +229,7 @@ nav li {
     max-height: 600px !important;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: blue;
+    background-color:white;
     position: relative;
     border: #88563C solid 3px;
 }
@@ -272,7 +273,7 @@ nav li {
 .projects-wrapper img {
     width: 250px;
     height: 200px;
-    border: black solid 3px;
+    border: #88563C solid 3px;
     margin: 50px;
-    transition: 0.1s;
+    transition: 0.3s;
 }
