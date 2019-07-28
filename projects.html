@@ -19,12 +19,106 @@
     </nav>
 
     <div class="projects-wrapper">
-        <div class="hover-wrapper"> <img src="img/robots.jpg" alt=""> </div>
-        <div class="hover-wrapper"> <img src="img/sheriff.jpeg" alt=""> </div>
-        <div class="hover-wrapper"> <img src="img/waze.JPG" alt=""> </div>
-        <div class="hover-wrapper"> <img src="img/x0.jpeg" alt=""> </div>
-        <div class="hover-wrapper"> <img src="img/er.png" alt=""> </div>
-        <div class="hover-wrapper"> <img src="img/crypto.jpg" alt=""> </div>
+        <div class="hover-wrapper">
+            <p id="title-h">Robor-Planning</p>
+            <h2>C++</h2>
+            <a href="https://github.com/blk14/Robot-planning" target="blank">
+                <img src="img/robots.jpg" alt="">
+            </a>
+            <p id="projects-content"> &nbsp; The implementation for a deposit of boxes with robots which move the boxes between them. The robots take commands from a person.
+                    &nbsp;The deposit is defined by a configuration of map[LIN][COL], there are N robots which are responsible of moving the boxes. map[x][y] represents the number of boxes from the cell of coordinates x, y in deposit. They have memorise all the commands until that are given until an "EXECUTE" command and they have to execute the first command from the queue. The robots are able to recognise for dropping and getting (boxes), last executed command or how much a command have stayed in the queue</p> 
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h">Sheriff-of-Nottingham</p>
+            <h2>JAVA</h2>
+            <a href="https://github.com/blk14/Sheriff-of-Nottingham" target="blank">
+                <img src="img/sheriff.jpeg" alt="">
+            </a>  
+            <p id="projects-content">&nbsp; This is a implementation of the boardgame Sheriff of Nottingham in java. Here are 4 strategies and based on the cards ids, the players and theirs associations with a strategy given in input, this program will return each player with his points after the game. The stregies: <br>
+
+                &nbsp; basic: he is a fairplay player, allways puts in the sack the legal goods and when he is sheriff he inspects every sack<br>
+                &nbsp; greedy: he plays similar with basic in odd rounds, but in even rounds he tries to add an illegal good in sack. At the inspection he checks everyone<br>
+                &nbsp; bribed: he tries to put as much illegal goods as possible in his sack. When he is sheriff he inspects the player from his left side and the one from his right side<br>
+                &nbsp; wizard: he sacrifices the first round to collect some informations about his opponents and then he plays based on this informations</p>
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h"></p>
+            <h2>C++</h2>
+            <a href="https://github.com/blk14/Hit-the-road" target="blank">
+                <img src="img/waze.JPG" alt="">
+            </a>
+            <p id="projects-content">A mini google maps implementation
+
+                    &nbsp;This application has the purpose to give the answer for 5 tasks which are frequently encountered in applications like google maps or waze. Based on some input data such as: <br><br>
+                    
+                    &nbsp;1.a list of cities<br>
+                    &nbsp;2.the roads between them (source - destination). The roads are unidirectional and the distance is 1 unity by default<br>
+                    &nbsp;3.a list of cities with gas station [4]. a list of cities and for each one I have to find out the cities at which it can't arrive [5]. a list of cars with the following details: the city where it is, how much gas does it has and the consumption per unity [6]. a list of bus routes with the following details: source_city, destination_city and the number of travelers<br><br>
+                    &nbsp;TASK 1: Is to find out the most crowded city. (the rule is that the most crowded city is the one which represent the destination for most roads)<br><br>
+                    
+                    &nbsp;Task 2: Is to find out if the map is valid. (the rule is: if there is a road between each city the map is valid, the cost for this road doesn't matter, in other words if the map is a strongly connected component)<br><br>
+                    
+                    &nbsp;Task 3: Is to take the list from [4] and find out the list for each city with inaccessible cities for it (there is not roud between them)<br><br>
+                    
+                    &nbsp;Task 4: Is to take the list from [5] and find out for each car the closest gas station from another city (the shortest road to a city with gas station) and print "DA" if the car can arrive in a city with gas station and the remaining fuel, or "NU" if it can't.<br><br>
+                    
+                    &nbsp;Task 5: Is to take the list from [6] and find out the route which is traveled by the most travelers, print the route and the number of travelers. It is known that every bus is going on the shortest route between 2 cities and the buses does not stop between source city and destination</p>
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h">Tic-Tac-Toe</p>
+            <h2>C++</h2>
+            <a href="https://github.com/blk14/tic-tac-toe" target="blank">
+                <img src="img/x0.jpeg" alt="">
+            </a>
+            <p id="projects-content">&nbsp;This is an implementation for the x&0 game in c++. For playing it you have to choose if you want to start, then to insert the coordinates for "x" (by default you play with x and computer with "0"). The implementation tries to win or to be very hard to be beaten. For it there is a check function which decide if the game is end. "Check" function checks each posibility for 3 elements to be in row or if the matrix is full, in this cases results that the game is finished. The function "fill" is the function which decide where to put elements for the computer and decide it based on the information given by the "danger" function which return the coordinates where is a posibility to end the game (where there are 2 elements in a row and the player wait for the third). If there is not this danger the "fill" function tries to create a posibility like that and decide to put elements where is a perspective to put 3 in a row, if it is not possible too, then it put the element where is possible.</p>
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h">ER-simulator</p>
+            <h2>JAVA</h2>
+            <a href="https://github.com/blk14/ER-simulator" target="blank">
+                <img src="img/er.png" alt="">
+            </a> 
+            <p id="projects-content">&nbsp;This is a application which simulates a real life situation from a hospital. Based on a input where you receive data about the patients (such as: name, illness type, severity of the illness, the moment when they arrive to the hospital) and data about doctors (such as: name,specialzation, if he is surgeon, self capacity for which he can treat) and the number of nurses. The application is able to send the patients in priority queues based on their illness type and severity. Also it is able to make decisions for doctors such as: treatment at home, treatment in the hospital (here the patients are consulted by the nurses periodically), to surgery (after surgery they are also kept in the hospital) or send to tehnicians for detailed investigation, all of this decisions are based on mathematical ecuations and some constants. If the patients are sent to tehnicians, after this they are redistributed again in queues and the doctors respect the decisions from investigations. The application is using Observer pattern so the "road" of a patient is easier to follow. The application receives the number of rounds for which it should go on.</p>
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h">Cryptography</p>
+            <h2>ASSEMBLEY</h2>
+            <a href="https://github.com/blk14/Cryptography" target="blank">
+                <img src="img/crypto.jpg" alt="">
+            </a>
+            <p id="projects-content">It is a project in assembly language where I had to do tasks in which I had to decode strings encoded with: xor, rolling xor, xoer between two strings represented by hexazecimal characters, bruteforce or Vigenere Cipher</p>
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h">Python-Interpreter</p>
+            <h2>Racket</h2>
+            <a href="https://github.com/blk14/Python-Interpreter-in-Racket" target="blank">
+                <img src="img/racket.svg" alt=""> 
+            </a>
+            <p id="projects-content">&nbsp;This application is in Racket and has the aim to be an interpreter for python language. It is able to read and to do a minimum set of operations such as: add, subtract, multiply or divide, but also it is able to recognise and to iterate through while or for loops for which it has to do comparations and conditional jumps. It is using Cpython with a stack machine model.</p>
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h">Version-Control-System</p>
+            <h2>C++</h2> 
+            <a href="https://github.com/blk14/Version-Control-System" target="blank">
+                <img src="img/vcs.jpg" alt="">
+            </a>
+            <p id="projects-content">&nbsp;This is the implementation of a Version Control System simulation which has the role to do a minimum set of unix instructions such as: create, change or delete files. Also, the application can do vcs instructions (such as: status, branch, commit, checkout, log or rollback) and is able to save the current state of the file system. The purpose of this application is to be able to come back to prevoius states of the file system. In this application you can create files, write something in, etc. And all of this changes will be memorised in staging. Eventually if we give a commit command the staging area will be empty and the changes will be saved as a commit in a special array of commits (each branch has this type of array). Also, we can create braches. This is a project in java and I used vistor pattern where every type of command extends a class which "accept" a vistor class, from "accept" method si called the "visit" method from visitor, then from visitor is called "execute" method for that specific command.</p>
+        </div>
+        <div class="hover-wrapper">
+            <p id="title-h">Client-Server-Application</p>
+            <h2>C++</h2>
+            <a href="https://github.com/blk14/Client-Server-Application" target="blank">
+                <img src="img/client-server.png" alt="">
+            </a>
+            <p id="projects-content">&nbsp;It is a Client-Server Application in which there are 3 components:<br><br>
+
+                    &nbsp;The first component is the TCP client (subscriber) which represents a client who would want to subscribe to different topics. He can chose if he want to receive messages even though he is offline (he will receive all the collected messages, while he was offline, at once when he will be online back, similar with what is happening when we do not check or mail for a while). Or he can chose to do not receive anything while he is offline.<br><br>
+                    &nbsp;The second component is a UDP client which has the role to generate messages from different topics to the server<br><br>
+                    &nbsp;The third component is the server which has a UDP connection with the second component and a TCP connection with the first component where it uses multiplexing for dealing easily with many subscribers. It has the role to parse the UDP messages and the TCP connections and messages (with the intention to memorise the subscribers and theirs actions of subscribing or unsibscribing to the topics). It takes the messages from the UDP and send them only to the clients which are subscribed to that topic. (It is similar with what gmail/yahoo does when a travel agency for example sends offers via email to their subscribers, what is more is that situation with online/offline choice of the subscribers).</p>
+        </div>
+
+
+
     </div>
 
     <p id="copyright">Copyright © 2019 Bogdan Negru. All Rights Reserved.</p>
