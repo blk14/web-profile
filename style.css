@@ -179,6 +179,7 @@ nav li {
     list-style: none;
     align-items: center;
     margin: auto;
+    z-index: -1;
 }
 
 .logo {
@@ -209,29 +210,30 @@ nav li {
     strong { font-weight: bold; }
 
 .projects-bg {
-    background-image: url(img/projects-bg3.jpeg);
+    background-image: url(img/projects-bg9.jpeg);
     background-position: center;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 1;
     margin: 0 0;
-    height: 1200px;
+    height: 1050px;
     position: relative;
 }
 
 .projects-wrapper {
     width: 90%;
-    height: 1100px;
+    height: 900px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(211,211,211, 0.4);
+    background-color: rgba(17, 16, 16, 0.4);
     margin: auto;
     margin-left: 5%;
     align-self: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     position: absolute;
 }
+
 .hover-wrapper p {
     display: none;
 }
@@ -247,6 +249,7 @@ nav li {
     background-color:white;
     position: relative;
     border: #88563C solid 3px;
+    z-index: 2;
 }
 
 .hover-wrapper:hover img {
@@ -262,6 +265,7 @@ nav li {
 
 .hover-wrapper:hover p {
     display: block;
+    color: #88563C;
 }
 .hover-wrapper:hover h2 {
     display: block;
@@ -269,6 +273,7 @@ nav li {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
+    color: rgb(102, 65, 45);
 }
 #title-h {
     margin-top: 15px;
@@ -284,6 +289,7 @@ nav li {
     font-size: 17px;
     line-height: 20px;
     overflow: auto;
+    color: rgb(77, 45, 28)
 }
 .projects-wrapper img {
     width: 250px;
@@ -292,4 +298,6 @@ nav li {
     margin: 50px;
     transition: 0.4s;
     background-color: white;
+    z-index: 0;
+    overflow: hidden;
 }
