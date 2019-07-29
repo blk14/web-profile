@@ -206,6 +206,8 @@ nav li {
 
     /* PROJECTS STYLE */
 
+    strong { font-weight: bold; }
+
 .projects-bg {
     background-image: url(img/projects-bg3.jpeg);
     background-position: center;
