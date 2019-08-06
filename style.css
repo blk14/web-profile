@@ -357,4 +357,130 @@ strong { font-weight: bold; }
 /* HOBBIES */
 
 
+.bar {
+    position: relative;
+    height: 1000px;
+    width: 180px;
+    bottom: 0;
+    float: left;
+    background-color: #88563C;
+    top: 112;
+}
+
+.bar a {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    opacity: 1;
+    line-height: 80px;
+    text-decoration-line: none;
+
+}
+.tags {
+    width: 150px;
+    height: auto;
+    position: fixed;
+    padding-bottom: calc(100vh - 212px)
+}
+
+.hobbie {
+    position: relative;
+    margin-left: 200px;
+}
+
+.hobbie h1 {
+    color: #E0E0E0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 70px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.hobbie p {
+    color: #88563C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 50px;
+    line-height: 25px;
+    padding-right: 20px;
+}
+
+
+/* slideshow */
+
+.slideshow-container {
+    position: relative;
+    width: 750px;
+    height: 450px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slideshow-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: smaller;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #E0E0E0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-left: 650px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  #img-style {
+
+    border: black 2px solid;
+    width: auto;
+    height: auto;
+    max-height: 440px;
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    z-index: -29;
+    display: none;
+  }
+
+  video {
+      width: 100%;
+      /* border: black 2px solid; */
+      height: 100%;
+      max-height: 440px;
+      max-width: 730px;
+      display: none;
+      /* display: block; */
+      z-index: 1;
+  }
+
 
