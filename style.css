@@ -359,7 +359,7 @@ strong { font-weight: bold; }
 
 .bar {
     position: relative;
-    height: 2590px;
+    height: 3393px;
     width: 180px;
     bottom: 0;
     float: left;
@@ -377,7 +377,7 @@ strong { font-weight: bold; }
     font-size: 22px;
     color: white;
     opacity: 1;
-    line-height: 80px;
+    line-height: 70px;
     text-decoration-line: none;
 
 }
