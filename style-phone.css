@@ -262,4 +262,144 @@
         text-align: center;
         margin: 20px auto;
     }
+
+
+
+    /* HOBBIES */
+
+
+.bar {
+    display: none;
+}
+
+
+.hobbie {
+    position: relative;
+    margin: 70px 0;
+}
+
+.hobbie h1 {
+    color: #E0E0E0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hobbie p {
+    color: #88563C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-left: 55px;
+    line-height: 20px;
+    padding-right: 30px;
+}
+
+
+/* slideshow */
+
+.slideshow-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slideshow-container h3 {
+    display: none;
+    color: 	#505050;
+    opacity: 0.8;
+    text-align: center;
+    margin: 10px auto;
+    padding-left: 50px;
+    font-size: 13px;
+    max-width: 150px;
+    position: absolute;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    /* top: 50%; */
+    width: auto;
+    padding: 16px;
+    color: #E0E0E0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-left: 250px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  #img-style {
+    /* position: absolute; */
+    border: black 2px solid;
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    z-index: -29;
+    display: none;
+    margin-top: 50px;
+  }
+
+  video {
+      width: 100%;
+      height: 100%;
+      max-height: 440px;
+      max-width: 730px;
+      display: none;
+      z-index: 1;
+      margin-top: 50px;
+  }
+
+  #space {
+      margin-top: 70px;
+  }
+
+  #copyright {
+      margin: 0 0;
+      padding-bottom: 20px;
+      display: block;
+      font-size: 11px;
+  }
 }
