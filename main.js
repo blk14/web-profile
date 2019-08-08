@@ -1,4 +1,5 @@
 
+// PARTEA DE SLIDESHOW HOBBIES
 
 let getSlidesBasket = document.querySelectorAll(".slide-basket");
 let getSlidesFood = document.querySelectorAll(".slide-food");

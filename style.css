@@ -261,17 +261,40 @@ strong { font-weight: bold; }
     position: absolute;
 }
 
-.hover-wrapper p {
-    display: none;
-}
-.hover-wrapper:hover p {
+
+.hover-wrapper:hover p, .another p {
     text-align: center;
-    font-size: 12px; 
+    font-size: 12px;
+    position: relative;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    line-height: 20px;
+    overflow: auto;
+    color: rgb(77, 45, 28)
 }
-.hover-wrapper h2 {
+.hover-wrapper h2, .hover-wrapper h1, .hover-wrapper p {
     display: none;
 }
-.hover-wrapper:hover {
+
+.hover-wrapper:hover h2, .another h2 {
+    display: block;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(102, 65, 45);
+}
+
+.hover-wrapper:hover h1, .another h1 {
+    display: block;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    color: #88563C;
+}
+.hover-wrapper:hover, .another{
     width: 400px;
     height: auto;
     max-height: 600px !important;
@@ -284,7 +307,12 @@ strong { font-weight: bold; }
     transition: 1s;
 }
 
-.hover-wrapper:hover img {
+.another {
+    position: absolute;
+    width: 500px;
+}
+
+.hover-wrapper:hover img, .another img {
     position: relative;
     top: 25px;
     width: 300px;
@@ -295,37 +323,11 @@ strong { font-weight: bold; }
     align-content: center;
 }
 
-.hover-wrapper:hover p {
-    display: block;
-    color: #88563C;
+.another img {
+    margin-left: 120px !important;
 }
 
 
-.hover-wrapper:hover h2 {
-    display: block;
-    padding: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: center;
-    color: rgb(102, 65, 45);
-}
-#title-h {
-    margin-top: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    text-align: center;
-    text-decoration-line: underline;
-}
-#projects-content {
-    /* display: block; */
-    position: relative;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
-    line-height: 20px;
-    overflow: auto;
-    color: rgb(77, 45, 28)
-}
 .projects-wrapper img {
     width: 250px;
     height: 200px;
@@ -336,10 +338,10 @@ strong { font-weight: bold; }
     z-index: 0;
     overflow: hidden;
 }
-.description-btn {
+.expand {
     display: none;
 }
-.hover-wrapper:hover .description-btn {
+.hover-wrapper:hover .expand, .another .expand {
     width: 100px;
     height:20px;
     display: block;
@@ -505,5 +507,3 @@ strong { font-weight: bold; }
   #space {
       margin-top: 200px;
   }
-
-

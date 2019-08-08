@@ -172,17 +172,24 @@
         height: 150px;
         position: relative;
     }
-    .hover-wrapper p {
+    .hover-wrapper h2, .hover-wrapper h1, .hover-wrapper p {
         display: none;
     }
     .hover-wrapper:hover p {
-        text-align: center;
-        font-size: 12px; 
-    }
-    .hover-wrapper h2 {
         display: none;
     }
-    .hover-wrapper:hover {
+    .hover-wrapper:hover h1, .another h1 {
+        text-align: center;
+        font-size: 12px;
+        position: relative;
+        color: rgb(77, 45, 28);
+        margin-top: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .hover-wrapper:hover, .another {
         width: 300px;
         height: auto;
         max-height: 500px !important;
@@ -195,7 +202,7 @@
         transition: 1s;
     }
 
-    .hover-wrapper:hover img {
+    .hover-wrapper:hover img, .another img {
         position: relative;
         top: 15px;
         width: 200px;
@@ -206,28 +213,12 @@
         align-content: center;
     }
 
-    .hover-wrapper:hover p {
-        display: block;
-        color: #88563C;
+    .another img {
+        position: !important;
+        margin: 0 60px !important;
     }
 
-
-    .hover-wrapper:hover h2 {
-        display: block;
-        padding: 5px;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        text-align: center;
-        color: rgb(102, 65, 45);
-    }
-    #title-h {
-        margin-top: 15px;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 25px;
-        text-align: center;
-        text-decoration-line: underline;
-    }
-    #projects-content {
+    .another p {
         position: relative;
         padding: 10px;
         font-family: 'Times New Roman', Times, serif;
@@ -236,11 +227,21 @@
         overflow: auto;
         color: rgb(77, 45, 28)
     }
+
+    .hover-wrapper:hover h2, .another h2 {
+        display: block;
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center;
+        color: rgb(102, 65, 45);
+    }
+
     .projects-wrapper img {
         width: 175px;
         height: 125px;
         border: #88563C solid 3px;
-        margin: 50px;
+        margin: 20px 60px;
         transition: 0.6s;
         background-color: white;
         z-index: 0;
