@@ -213,6 +213,9 @@
         align-content: center;
     }
 
+    .another {
+        max-height: 700px;
+    }
     .another img {
         position: !important;
         margin: 0 60px !important;
