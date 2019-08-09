@@ -233,6 +233,10 @@ nav li {
 
 
     /* PROJECTS STYLE */
+    #view {
+        position: relative;
+        top: 300px;
+    }
 
 strong { font-weight: bold; }
 
@@ -308,7 +312,7 @@ strong { font-weight: bold; }
 }
 
 .another {
-    position: fixed;
+    position: absolute;
     width: 500px;
     top: 50px;
 }
