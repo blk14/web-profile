@@ -194,23 +194,26 @@
         }
 
         .another {
-            width: 400px !important;
+            position: fixed;
+            top: 150px;
+            width: 500px !important;
+            max-height: 800px !important;
         }
     
         .hover-wrapper:hover img, .another img {
             position: relative;
             top: 15px;
             width: 200px;
+            margin-left: 50px;
             height: 150px;
-            border: none;
+            border: none !important;
             padding-bottom: 15px;
-            border-bottom: #88563C solid 2px;
             align-content: center;
         }
     
         .another img {
-            position: !important;
-            margin: 0 100px !important;
+            height: 200px !important;
+            width: 260px !important;
         }
     
         .another p {

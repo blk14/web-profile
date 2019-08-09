@@ -207,17 +207,19 @@
         top: 15px;
         width: 200px;
         height: 150px;
-        border: none;
+        border: none !important;
         padding-bottom: 15px;
-        border-bottom: #88563C solid 2px;
         align-content: center;
     }
 
     .another {
+        position: fixed;
+        top: 90px;
+        width: 320px !important;
+        margin: 0 auto;
         max-height: 700px;
     }
     .another img {
-        position: !important;
         margin: 0 60px !important;
     }
 
